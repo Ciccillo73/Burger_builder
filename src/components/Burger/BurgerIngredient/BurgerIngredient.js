@@ -3,19 +3,6 @@ import classes from "./BurgerIngredient.css";
 import PropTypes from "prop-types";
 
 class BurgerIngredient extends Component {
-  // constructor()(props){
-  //   super(props);
-  //   this.state = {...}
-  // }
-
-  state = {
-    ingredients: {
-      salad: 1,
-      bacon: 1,
-      cheese: 2,
-      meat: 2,
-    },
-  };
   render() {
     let ingredient = null;
 
