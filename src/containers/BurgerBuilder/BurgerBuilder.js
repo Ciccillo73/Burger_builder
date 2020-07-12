@@ -19,6 +19,7 @@ class BurgerBuilder extends Component {
       meat: 0,
     },
     totalPrice: 4,
+    purchasable: false
   };
 
   addIngredientHandler = (type) => {
