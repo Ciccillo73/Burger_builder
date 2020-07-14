@@ -3,7 +3,9 @@ import React from 'react';
 const navigationItems = () => (
    
        <ul>
-           <li></li>
+           <li>
+               <a href="/">A Link</a>
+           </li>
        </ul>
    
 );
