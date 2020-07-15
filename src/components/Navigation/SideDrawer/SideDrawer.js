@@ -4,7 +4,10 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 const sideDrawer = (props) => {
     return (
         <div>
-            
+            <Logo />
+            <nav>   
+                <NavigationItems />
+            </nav>
         </div>
     );
 };
