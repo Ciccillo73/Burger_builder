@@ -8,7 +8,7 @@ import Aux from "../../../hoc/Aux";
 const sideDrawer = (props) => {
   return (
     <Aux>
-      <BackDrop />
+      <BackDrop show/>
       <div className={classes.SideDrawer}>
         <div className={classes.Logo}>
           <Logo />
