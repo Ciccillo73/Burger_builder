@@ -96,10 +96,10 @@ class BurgerBuilder extends Component {
     };
     //Firebase connection
 
-    // axios
-    //   .post("/orders.json", order)
-    //   .then((response) => {this.setState({ loading: false, purchase: false})}))
-    //   .catch((error) => {this.setState({ loading: false, purchase: false}));
+    axios
+      .post("/orders.json", order)
+      .then((response) => this.setState({ loading: false, purchasing: false }))
+      .catch((error) => this.setState({ loading: false, purchasing: false }));
   };
 
   render() {
@@ -117,16 +117,16 @@ class BurgerBuilder extends Component {
         ingredients={this.state.ingredients}
       />
     );
+
     if (this.state.loading) {
       orderSummary = <Spinner />;
     }
     return (
       <Aux>
         <Modal
-          show={this.state.ingredients}
+          show={this.state.purchasing}
           modalClosed={this.purchaseCancelHandler}
         >
-          {" "}
           {orderSummary}
         </Modal>
 
